@@ -145,18 +145,15 @@ function App() {
                     onChange={(e) => setDate(e.target.value)}
                   />
                 </div>
-                <div className="flex flex-col">
-                  <label htmlFor="dueDate">M/S : </label>
-                  <input
-                    type="text"
-                    name="clientName"
-                    id="clientName"
-                    placeholder="Enter M/S"
-
-                    value={clientName}
-                    onChange={(e) => setClientName(e.target.value)}
-                  />
-                </div>
+                <textarea
+                  name="clientName"
+                  id="clientName"
+                  placeholder="Enter M/S"
+                  value={clientName}
+                  onChange={(e) => setClientName(e.target.value)}
+                  rows={5}
+                  cols={30}
+                />
                 <div className="flex flex-col">
                   <label htmlFor="dueDate">GSTIN : </label>
                   <input
